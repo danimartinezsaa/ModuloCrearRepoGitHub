@@ -26,8 +26,15 @@ import org.openide.util.NbBundle.Messages;
 )
 @ActionReference(path="Menu/Versioning", position=0)
 @Messages("CTL_CrearRepositorio=Crear Repositorio GitHub")
+/**
+ * Clase en dónde se crea el repositorio en GitHub.com
+ */
 public final class CrearRepositorio implements ActionListener{
-
+    /**
+     * Se crea un repositorio con el nombre indicado el un JOptionPane.
+     * Recibe el nombre de usuario y contraseña de GitHub.com del archivo .github, que se encuentra en el home del usuario
+     * @param e 
+     */
     @Override
     public void actionPerformed(ActionEvent e){
         
